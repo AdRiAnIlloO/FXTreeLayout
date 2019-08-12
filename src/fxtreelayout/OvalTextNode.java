@@ -90,7 +90,7 @@ public class OvalTextNode // NO_UCD
 		return mIdText;
 	}
 
-	public Path getPath() // NO_UCD
+	public Path getPath()
 	{
 		return mPath;
 	}

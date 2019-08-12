@@ -81,7 +81,7 @@ public class FXTreeLayout implements NodeExtentProvider<OvalTextNode> // NO_UCD
 		return child;
 	}
 
-	public OvalTextNode addChild(OvalTextNode parent, String childNodeIdText) // NO_UCD
+	public OvalTextNode addChild(OvalTextNode parent, String childNodeIdText)
 	{
 		OvalTextNode child = new NestedOvalTextNode(childNodeIdText, parent);
 		return addChild(parent, child);
