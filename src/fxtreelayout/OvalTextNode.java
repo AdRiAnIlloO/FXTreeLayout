@@ -95,6 +95,11 @@ public class OvalTextNode // NO_UCD
 		return mPath;
 	}
 
+	public StackPane getStackPane()
+	{
+		return mStackPane;
+	}
+
 	double getWidth()
 	{
 		return mWidth;
