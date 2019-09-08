@@ -25,7 +25,9 @@ class FoldFilteringTree extends DefaultTreeForTreeLayout<OvalTextNode>
 			return Arrays.asList();
 		}
 
-		return super.getChildrenList(node);
+		List<OvalTextNode> auxChildrenList = super.getChildrenList(node);
+		auxChildrenList.removeIf(child -> child.mIsPurged);
+		return auxChildrenList;
 	}
 
 	Iterable<OvalTextNode> getUnfilteredChildren(OvalTextNode node)

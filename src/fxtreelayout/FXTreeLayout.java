@@ -168,6 +168,8 @@ public class FXTreeLayout implements NodeExtentProvider<OvalTextNode> // NO_UCD
 	public void removeNodesRecursively(OvalTextNode parent)
 	{
 		parent.removeFromParentPane(mInnerPane);
+		parent.mIsPurged = true;
+		mNeedsRefresh = true;
 
 		for (Iterator<OvalTextNode> iterator = getTree().getUnfilteredChildren(parent).iterator(); iterator
 				.hasNext(); iterator.remove())

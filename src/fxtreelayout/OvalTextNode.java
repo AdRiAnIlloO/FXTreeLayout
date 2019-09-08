@@ -18,6 +18,7 @@ public class OvalTextNode // NO_UCD
 	private double mHeight;
 	private Text mIdText;
 	private boolean mIsFolded;
+	boolean mIsPurged;
 	private Path mPath;
 	private StackPane mStackPane;
 	private double mWidth;
