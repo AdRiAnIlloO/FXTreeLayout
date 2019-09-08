@@ -150,6 +150,12 @@ public class FXTreeLayout implements NodeExtentProvider<OvalTextNode> // NO_UCD
 		TreeDrawThinker.sInstance.mTreeLayouts.add(this);
 	}
 
+	public void remove()
+	{
+		removeNodesRecursively(getTree().getRoot());
+		TreeDrawThinker.sInstance.mTreeLayouts.remove(this);
+	}
+
 	private void removeChildrenNodesFromUIRecursively(OvalTextNode parent)
 	{
 		for (OvalTextNode child : getTree().getUnfilteredChildren(parent))
